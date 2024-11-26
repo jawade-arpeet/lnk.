@@ -13,7 +13,12 @@ const DMSans = DM_Sans({
 function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={cn("min-h-screen antialiased", DMSans.className)}>
+      <body
+        className={cn(
+          "min-h-screen antialiased bg-stone-950 text-white",
+          DMSans.className,
+        )}
+      >
         {children}
       </body>
     </html>
